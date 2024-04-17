@@ -1,0 +1,132 @@
+.bg-yellow {
+  background-color: #fbc531;
+}
+.heading-dandori-details {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+}
+.scw-dandori-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0;
+}
+.scw-dandori,
+.scw-dandori-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 150px;
+  background-color: #ea2027;
+  border-radius: 20px;
+  border: 2px solid #000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 10px;
+}
+.scw-dandori-wrapper .scw-dandori {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+}
+.scw-dandori-wrapper .scw-dandori-total {
+  margin-left: 20px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.scw-dandori:focus {
+  outline: none;
+}
+.scw-dandori-details.timer {
+  color: #000;
+  font-size: 64px;
+  font-weight: 700;
+  margin-left: 50px;
+}
+.wrapper-plan-act-dandori-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  /* height: 300px; */
+  margin: 0 auto 70px auto;
+  flex-wrap: wrap;
+}
+.title-box-dandori-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #d3d5d8;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 500;
+  width: 250px;
+  height: 90px;
+}
+.timer-box-dandori-details {
+  margin-left: 25px;
+  font-size: 48px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  width: 580px;
+  height: 90px;
+}
+.timer-box-dandori-details.active {
+  color: #ea2027;
+}
+.btn-finish-dandori-details {
+  width: 180px;
+  height: 90px;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 40px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  background-color: #29f176;
+}
+.btn-finish-dandori-details:focus {
+  outline: none;
+}
+.scan-id-dandori {
+  background-color: #fff;
+  width: 409px;
+  height: 48px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.scan-id-dandori-bottom {
+  background-color: #fff;
+  width: 409px;
+  height: 48px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-transform: uppercase;
+}

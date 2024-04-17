@@ -1,0 +1,53 @@
+<template class="task-template">
+  <section id="break-production-popup" class="container-fluid popup">
+    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+      <div
+        class="row mt-n5 p-5 bg-dark text-light text-center"
+        style="width: 85%"
+      >
+        <div class="col">
+          <h1 class="font-weight-bold">ISTIRAHAT</h1>
+          <div class="mt-5 row">
+            <div class="border-0 part-info title col-4 p-2">PLAN</div>
+            <div
+              class="border-0 part-info name col p-2 font-weight-bold shift-break-duration-plan"
+            >
+              00:00:00
+            </div>
+          </div>
+
+          <div class="row mt-1">
+            <div class="border-0 part-info title col-4 p-2">ACT</div>
+            <div
+              class="border-0 part-info name col p-2 shift-break-duration-actual text-success"
+            >
+              00:00:00
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div
+              class="border-0 rounded part-info name col scw-testing"
+              style="line-height: 50px"
+            >
+              <span class="auth-confirm-title">Please Scan Your RFID</span>
+              <br />
+              <span
+                class="font-weight-bold shift-operator text-primary auth-confirm model-1"
+                data-auth-session="shift-break"
+                data-auth-nth="0"
+                >OPERATOR</span
+              >
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <h1 class="border-0 rounded col p-2 text-uppercase">
+              PT. Sugity Creatives<br />Have a Nice Work
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

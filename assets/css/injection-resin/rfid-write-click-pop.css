@@ -1,0 +1,61 @@
+.bg-darkenblue {
+    background-color: #071d4a;
+  }
+  .wrapper-write-rfid-pop {
+    width: 742px;
+    height: 362px;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  .heading-write-rfid-pop {
+    font-size: 45px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 20px 0;
+  }
+  .kanban-write-rfid-pop {
+    width: 154px;
+    height: 92px;
+    background-color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000;
+  }
+  .btn-action-write-rfid-pop {
+    width: 195px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 15px;
+    font-weight: 700;
+    border: none;
+  }
+  .btn-action-write-rfid-pop:focus {
+    outline: none;
+  }
+  .btn-action-write-rfid-pop.not-accept {
+    background-color: #ea2027;
+  }
+  .scan-id-input-write-rfid {
+    background-color: #fbc531;
+    width: 409px;
+    height: 48px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    text-transform: capitalize;
+  }
+  
+  

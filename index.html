@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>DCS</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/injection-resin/finish-pop.css" />
+    <link rel="stylesheet" href="./assets/css/injection-resin/style.css" />
+    <link rel="stylesheet" href="./assets/css/injection-resin/login.css" />
+    <link rel="stylesheet" href="./assets/css/injection-resin/break.css" />
+    <link rel="stylesheet" href="./assets/css/injection-resin/ng-list.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/rfid-employee-write.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/rfid-write-click-pop.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/rfid-write-pop.css"
+    />
+    <link rel="stylesheet" href="./assets/css/injection-resin/dandori.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/dandori-details.css"
+    />
+    <link rel="stylesheet" href="./assets/css/injection-resin/part-info.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/injection-resin-menu.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/kanban-menu.css"
+    />
+    <link rel="stylesheet" href="./assets/css/injection-resin/ng-awal.css" />
+    <link rel="stylesheet" href="./assets/css/injection-resin/menu-scw.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/details-scw.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/utility-scw-pop.css"
+    />
+    <link rel="stylesheet" href="./assets/css/injection-resin/scw-popup.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/injection-resin/dandori-pop.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body style="position: relative">
+    <p id="status"></p>
+    <!-- Alert container for notification -->
+    <div id="alert-container" class="alert-container container">
+      <div class="alert-row row"></div>
+    </div>
+
+    <!-- spinner for loading animation -->
+    <div class="spinner-wrapper text-center py-2">
+      <span
+        class="spinner-grow spinner-border text-primary slow-spin"
+        role="status"
+        style="width: 20px; height: 20px"
+        aria-hidden="true"
+      ></span>
+      <span
+        class="spinner-grow spinner-border text-danger slow-spin"
+        role="status"
+        style="width: 20px; height: 20px"
+        aria-hidden="true"
+      ></span>
+      <span
+        class="spinner-grow spinner-border text-warning slow-spin"
+        role="status"
+        style="width: 20px; height: 20px"
+        aria-hidden="true"
+      ></span>
+      <span
+        class="spinner-grow spinner-border text-white slow-spin"
+        role="status"
+        style="width: 20px; height: 20px"
+        aria-hidden="true"
+      ></span>
+    </div>
+
+    <!-- main content where all those templates will be appended to -->
+    <main class="content js-content container-fluid h-100 w-100"></main>
+
+    <!-- JS Files -->
+    <script>
+      const $ = require("jquery");
+      const gEvents = new (require("events"))();
+
+      require("popper.js");
+      require("bootstrap");
+
+      require("./assets/js/index");
+      require("./assets/js/injection-resin/kanban-menu");
+      require("./assets/js/injection-resin/dandori");
+      require("./assets/js/injection-resin/break");
+      require("./assets/js/injection-resin/ng-list");
+      require("./assets/js/injection-resin/injection-resin-menu");
+      require("./assets/js/injection-resin/rfid-employee-write");
+    </script>
+  </body>
+</html>

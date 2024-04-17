@@ -1,0 +1,38 @@
+<template class="task-template">
+  <section id="finish-production-popup" class="container-fluid popup">
+    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+      <div class="row p-5 bg-dark text-light text-center w-100">
+        <div class="col">
+          <h1 class="card-title">Finish Production?</h1>
+          <div class="mt-5 row">
+            <div class="col">
+              <button
+                class="btn btn-block btn-danger btn-block btn-lg close-popup p-4"
+              >
+                CANCEL
+              </button>
+            </div>
+
+            <div class="col">
+              <button
+                class="btn-block btn btn-success btn-block btn-lg p-4 show-section close-popup app-reload"
+                data-section="login"
+              >
+                FINISH
+              </button>
+            </div>
+
+            <div class="col">
+              <button
+                class="btn-block btn btn-warning btn-block btn-lg p-4 close-popup production-change-type"
+                data-production-type="1"
+              >
+                PRODUKSI SISA MATERIAL
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

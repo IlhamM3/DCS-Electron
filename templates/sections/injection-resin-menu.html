@@ -1,0 +1,196 @@
+<template class="task-template">
+  <section
+    id="injection-resin-menu-section"
+    class="container-fluid h-100 w-100 section"
+  >
+    <div
+      class="d-flex justify-content-center h-100 w-100 bg-darkenblue text-robotto"
+    >
+      <div class="content-container">
+        <div class="wrapper-IRM">
+          <!-- Header -->
+          <div class="d-flex mt-4">
+            <div class="headers-box-IRM user">
+              <span class="operator-name">-</span>
+            </div>
+            <div class="headers-box-IRM part">Part No</div>
+            <div class="headers-box-IRM content-part" id="part-no-main"></div>
+            <div class="headers-box-IRM time">Shift Duration</div>
+            <!-- <div class="headers-box-IRM content" id="part-customer-main"></div> -->
+          </div>
+          <div class="d-flex mt-3 mb-3">
+            <div class="headers-box-IRM user">
+              Shift&nbsp;<span class="shift-number"></span>
+            </div>
+            <div class="headers-box-IRM part">Part Name</div>
+            <div class="headers-box-IRM content-part" id="part-name-main"></div>
+            <div class="headers-box-IRM time" style="background: #fff">
+              <span id="production-time">00:00:00.0</span>
+            </div>
+          </div>
+          <!-- end of Header -->
+          <div class="d-flex">
+            <!-- Left Wrapper  -->
+            <div class="left-wrapper-IRM">
+              <div>
+                <div class="box-text-IRM bg-yellow">
+                  <span>total produksi</span>
+                </div>
+                <div class="d-flex">
+                  <div class="flex-30 box-text-IRM bg-yellow">OK</div>
+                  <div class="flex-68 box-text-IRM" style="margin-left: 15px">
+                    <span class="shift-pcs-ok">0</span>&nbsp;Pcs
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="flex-30 box-text-IRM bg-yellow">NG</div>
+                  <div
+                    class="flex-68 box-text-IRM"
+                    style="margin-left: 15px; margin-bottom: 0"
+                  >
+                    <span class="shift-pcs-ng">0</span>&nbsp;Pcs
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div
+                    class="flex-30 box-text-IRM bg-yellow"
+                    style="padding-left: 11px; padding-right: 11px"
+                  >
+                    QTY/KBN
+                  </div>
+                  <div
+                    class="flex-68 box-text-IRM"
+                    style="margin-left: 15px; margin-bottom: 0"
+                  >
+                    <span class="shift-qty-per-kanban font-weight-bold">0</span
+                    >&nbsp;Pcs
+                  </div>
+                </div>
+                <div class="box-text-IRM bg-kanban">
+                  <span>total Kanban</span>
+                </div>
+                <div class="d-flex">
+                  <div class="flex-30 box-text-IRM bg-kanban">PLAN</div>
+                  <div class="flex-68 box-text-IRM" style="margin-left: 15px">
+                    <span class="shift-plan-kanban">0</span>&nbsp; KBN
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div
+                    class="flex-30 box-text-IRM bg-kanban"
+                    style="margin-bottom: 0"
+                  >
+                    ACT
+                  </div>
+                  <div
+                    class="flex-68 box-text-IRM"
+                    style="margin-left: 15px; margin-bottom: 0"
+                  >
+                    <span class="shift-act-kanban">0</span>&nbsp; KBN
+                  </div>
+                </div>
+                <div class="box-text-IRM bg-kanban" style="margin-top: 15px">
+                  <span>Product Remaining</span>
+                </div>
+                <div class="d-flex">
+                  <div
+                    class="box-text-IRM kanban-remain"
+                    style="margin-bottom: 0"
+                  >
+                    <span class="product-remaining">0</span>&nbsp; Items
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Left Wrapper IRM -->
+            <!-- Center Wrapper IRM -->
+            <div class="center-wrapper-IRM">
+              <div class="img-part-main-menu" id="part-img-main-menu"></div>
+
+              <div class="wrapper-btn-ng"></div>
+            </div>
+            <!-- End of Center Wrapper IRM -->
+            <!-- Right Wrapper IRM -->
+            <div class="right-wrapper-IRM">
+              <div class="box-text-IRM bg-yellow">
+                <span>Running Time</span>
+              </div>
+              <div class="box-text-IRM">
+                <span class="shift-time-running">00:00:00.0</span>
+              </div>
+              <div class="box-text-IRM bg-yellow">
+                <span>Downtime</span>
+              </div>
+              <div class="box-text-IRM">
+                <span class="shift-time-downtime">00:00:00.0</span>
+              </div>
+              <div class="box-text-IRM bg-yellow">
+                <span>Cycle Time</span>
+              </div>
+              <div class="d-flex">
+                <div class="flex-30 box-text-IRM bg-yellow">
+                  <span>plan</span>
+                </div>
+                <div class="flex-68 box-text-IRM" style="margin-left: 15px">
+                  <span class="shift-ct-plan">0</span>&nbsp;S
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="flex-30 box-text-IRM bg-yellow">
+                  <span>Act</span>
+                </div>
+                <div class="flex-68 box-text-IRM" style="margin-left: 15px">
+                  <span class="shift-ct-actual">0</span>&nbsp;S
+                </div>
+              </div>
+              <div class="box-text-IRM bg-kanban">
+                <span>Kanban Remaining</span>
+              </div>
+              <div class="d-flex">
+                <div
+                  class="box-text-IRM kanban-remain"
+                  style="margin-bottom: 0"
+                >
+                  <span class="shift-sisa-kanban">0</span>&nbsp; KBN
+                </div>
+              </div>
+            </div>
+            <!-- End of Right Wrapper IRM -->
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <button
+                class="button-action-IRM"
+                style="background-color: #d3d5d8"
+                id="breakTimer"
+              >
+                Istirahat
+              </button>
+              <button
+                class="button-action-IRM scw show-section"
+                data-section="scw-menu-run"
+                data-scw="production"
+                style="background-color: #ea2027; margin-left: 10px"
+              >
+                SCW
+              </button>
+              <button
+                class="button-action-IRM show-popup"
+                data-popup="dandori-menu-pop"
+                style="background-color: #fbc531; margin-left: 10px"
+              >
+                Dandori
+              </button>
+              <button id="btn-choose-kanban" class="button-action-IRM kanban">
+                Pilih Product
+              </button>
+            </div>
+            <button id="btn-finsih-shift" class="button-action-IRM finish">
+              finish
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

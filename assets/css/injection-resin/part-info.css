@@ -1,0 +1,105 @@
+.bg-darkenblue {
+  background-color: #071d4a;
+}
+.wrapper-flex-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.wrapper-flex-part-bottom {
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto 0 auto;
+}
+.flex-25 {
+  flex: 25%;
+}
+.flex-22 {
+  flex: 22%;
+}
+.flex-45 {
+  flex: 45%;
+}
+.flex-75 {
+  flex: 75%;
+}
+.flex-100 {
+  flex: 100%;
+}
+.title-text-part-info-injection-resin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background-color: #fbc531;
+  color: #000;
+  text-transform: uppercase;
+  margin: 5px 8px;
+}
+.content-text-part-info-injection-resin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px;
+  height: 60px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 1px 7px;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+}
+.title-text-part-info-injection-resin.bottom {
+  margin: 1px 8px;
+  height: 60px;
+}
+.title-text-part-info-injection-resin.bottom.image {
+  margin: 2px 8px;
+  height: 150px;
+}
+.content-text-part-info-injection-resin.image {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+.content-image-part-info-injection-resin {
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+}
+.button-part-info-injection-resin {
+  border-radius: 10px;
+  font-weight: 700;
+  width: 262px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  line-height: 1.1;
+  border: none;
+}
+.button-part-info-injection-resin:focus {
+  outline: none;
+}
+.button-part-info-injection-resin.bg-blue {
+  background-color: #45aaf2;
+}
+.button-part-info-injection-resin.bg-yellow {
+  background-color: #fbc531;
+  width: 350px;
+}
+.button-part-info-injection-resin.bg-green {
+  width: 259px;
+  border-radius: 10px;
+  background-color: #00e400;
+}

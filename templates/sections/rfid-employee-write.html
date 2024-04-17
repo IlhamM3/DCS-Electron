@@ -1,0 +1,52 @@
+<template class="task-template">
+  <section
+    id="rfid-employee-write-section"
+    class="container-fluid h-100 w-100 section"
+  >
+    <div
+      class="d-flex justify-content-center align-items-center h-100 w-100 bg-darkenblue text-robotto"
+    >
+      <div class="content-container">
+        <div id="carousel-frame-part-id-card" class="carousel slide my-3">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="wrapper-container-writerfid">
+                <div class="container-tap">
+                  <div class="writerfid-page-top">Position</div>
+                  <br />
+                  <div class="print-tap-position" id="dropdown-position">
+                    <center>-- Pilih Posisi --</center>
+                    <hr />
+                  </div>
+                </div>
+                <div class="container-tap">
+                  <div class="writerfid-page-top">Employee Name</div>
+                  <br />
+                  <div
+                    class="writerfid-page-bottom"
+                    id="dropdown-employee-name"
+                  >
+                    <center>-- Pilih Karyawan --</center>
+                    <hr />
+                  </div>
+                </div>
+                <div class="container-tap">
+                  <button
+                    class="btn-write-rfid show-popup"
+                    data-popup="rfid-write-pop"
+                  >
+                    Write RFID
+                  </button>
+                  <button class="btn-main-rfid-menu show-section">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center"></div>
+      </div>
+    </div>
+  </section>
+</template>

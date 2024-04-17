@@ -1,0 +1,57 @@
+{
+  "name": "YPTI-dcs-device",
+  "version": "1.0.0",
+  "description": "DCS Device for YPTI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild",
+    "format": "standardx --fix || exit 0"
+  },
+  "repository": "https://gitlab.com/stechoq/dcs/ypti/device-dcs",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "eslintConfig": {
+    "rules": {
+      "indent": [
+        "error",
+        "tab"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "author": "iqrok",
+  "devDependencies": {
+    "electron": "^9.4.4",
+    "electron-rebuild": "^3.2.5"
+  },
+  "dependencies": {
+    "@iqrok/pcsclite.helper": "0.0.2",
+    "@iqrok/serial.helper": "^0.4.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "date-and-time": "^0.14.2",
+    "electron-reload": "^1.5.0",
+    "ip-range-check": "^0.2.0",
+    "jquery": "^3.6.0",
+    "json5": "^2.2.0",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "modbus-serial": "^8.0.1",
+    "node-fetch": "^2.6.1",
+    "popper.js": "^1.14.4",
+    "serialport": "^9.0.8"
+  }
+}

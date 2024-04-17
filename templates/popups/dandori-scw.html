@@ -1,0 +1,64 @@
+<template class="task-template">
+  <section id="dandori-scw-popup" class="container-fluid popup">
+    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+      <div
+        class="row p-5 text-dark text-center"
+        style="width: 85%; background-color: #ea2027"
+      >
+        <div class="col">
+          <h1 class="text-light">STOP-CALL-WAIT</h1>
+          <div class="row my-3">
+            <div class="col text-center">
+              <div
+                class="text-primary bg-light rounded py-3 px-4"
+                style="font-size: 4rem"
+              >
+                DANDORI<br />
+                <!-- <span
+                  class="text-primary font-weight-bold dandoriTitle"
+                ></span> -->
+              </div>
+            </div>
+
+            <div class="col text-center">
+              <div
+                class="text-dark bg-light rounded py-3 px-4"
+                style="font-size: 2rem"
+              >
+                SCW Timer <br /><span class="text-danger dandori-scw-timer"
+                  >00:00:00</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 row">
+            <div
+              class="border-0 bg-secondary text-light part-info col-4 p-2 auth-confirm model-2 dandori-maintenance"
+              data-auth-session="dandori-scw"
+              data-auth-nth="1"
+            ></div>
+            <div
+              class="border-0 bg-light text-dark part-info col p-2 font-weight-bold auth-confirm-title dandori-maintenance"
+            >
+              SCAN YOUR ID
+            </div>
+          </div>
+
+          <div class="row mt-1 mb-5">
+            <div
+              class="border-0 bg-secondary text-light part-info col-4 p-2 auth-confirm model-2 auth-confirm-debug-two"
+              data-auth-session="dandori-scw"
+              data-auth-nth="0"
+            ></div>
+            <div
+              class="border-0 bg-light text-dark part-info col p-2 font-weight-bold auth-confirm-title auth-confirm-debug-two"
+            >
+              SCAN YOUR ID
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

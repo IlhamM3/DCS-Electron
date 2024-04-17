@@ -1,0 +1,211 @@
+.bg-darkenblue {
+    background-color: #071d4a;
+}
+.wrapper-IRM {
+    width: 98%;
+    margin: 0 auto;
+}
+.headers-box-IRM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+    height: 40px;
+    line-height: 1;
+    text-align: center;
+    font-size: 21px;
+}
+.headers-box-IRM.user {
+    width: 100%;
+    max-width: 340px;
+}
+.headers-box-IRM.part {
+    width: 100%;
+    max-width: 157px;
+    margin-left: 15px;
+    background-color: #fbc531;
+}
+.headers-box-IRM.time {
+    width: 235px !important;
+    margin-left: 15px;
+    background-color: #fbc531;
+}
+.headers-box-IRM.content-part {
+    width: 100%;
+    max-width: 470px;
+    margin-left: 20px;
+}
+.headers-box-IRM.content {
+    width: 100%;
+    max-width: 232px;
+    margin-left: 15px;
+}
+.wrapper-btn-ng {
+    display: flex;
+    justify-content: center;
+    height: 63px;
+    width: 212px;
+  }
+.left-wrapper-IRM {
+    display: flex;
+    flex-direction: column;
+    flex: 18%;
+    height: 500px;
+    justify-content: space-between;
+}
+.center-wrapper-IRM {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex: 0 0 61%;
+    margin-left: 15px;
+    height: 500px;
+    flex-direction: column;
+}
+.image-part-IRM {
+    max-height: 335px;
+    width: 75%;
+}
+
+.img-part-main-menu {
+    width: 100% !important;
+    height: 75% !important;
+}
+.right-wrapper-IRM {
+    display: flex;
+    flex-direction: column;
+    flex: 19%;
+    margin-left: 15px;
+    height: 500px;
+}
+.text-part-IRM {
+    height: 120px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    line-height: 1.2;
+    padding: 2px;
+    font-size: 20px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.text-qty-IRM {
+    text-transform: uppercase;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #000;
+}
+.box-text-IRM {
+    height: 40px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 18px;
+}
+.box-text-IRM.kanban-remain {
+    width: 100%;
+    height: 59px;
+}
+.box-text-IRM.bg-yellow {
+    background-color: #fbc531;
+}
+.box-text-IRM.bg-kanban {
+    background-color: #3bbfee;
+}
+.center-wrapper-IRM > h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", Arial, sans-serif;
+    letter-spacing: 1.2;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.center-wrapper-IRM > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 48px;
+    width: 335px;
+    margin: 5px auto;
+}
+.center-wrapper-IRM > div > h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", Arial, sans-serif;
+    font-style: normal;
+}
+.flex-30 {
+    flex: 30%;
+}
+.flex-68 {
+    flex: 68%;
+}
+.button-action-IRM-NG {
+    height: 63px;
+    width: 212px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    border: none;
+    background-color:#ea2027;
+}
+.button-action-IRM-NG:focus {
+    outline: none;
+}
+.button-action-IRM {
+    height: 105px;
+    width: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    border: none;
+}
+.button-action-IRM:focus {
+    outline: none;
+}
+.button-action-IRM.kanban {
+    margin-left: 10px;
+    background-color: #45aaf2;
+}
+.button-action-IRM.disabled {
+    margin-left: 10px;
+}
+/* .button-action-IRM.kanban-active {
+  background-color: #45aaf2;
+} */
+.button-action-IRM.finish {
+    background-color: #20bf6b;
+}

@@ -1,0 +1,98 @@
+.bg-darkenblue {
+    background-color: #071d4a;
+  }
+  .wrapper-delete-auth-pop {
+    width: 742px;
+    height: 362px;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  .heading-delete-auth-pop {
+    font-size: 45px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 20px 0;
+  }
+  .kanban-delete-auth-pop {
+    width: 154px;
+    height: 92px;
+    background-color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000;
+  }
+  .btn-cancel-rfid-write {
+    width: 195px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 15px;
+    font-weight: 700;
+    border: none;
+  }
+  .btn-cancel-rfid-write:focus {
+    outline: none;
+  }
+  .btn-cancel-rfid-write.not-accept {
+    background-color: #ea2027;
+  }
+  .btn-ok-rfid-write {
+    width: 195px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 15px;
+    font-weight: 700;
+    border: none;
+    background-color: #bdb2b2;
+  }
+.scan-auth-employee {
+    background-color: #fbc531;
+    width: 550px;
+    height: 64px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    text-transform: capitalize;
+}
+.scan-auth-waiting {
+  background-color: #fbc531;
+  width: 550px;
+  height: 100px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: #000;
+  text-transform: capitalize;
+}
+.scan-selected-employee {
+  background-color: #ea2027;
+  width: 550px;
+  height: 64px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+  text-transform: capitalize;
+}
+  

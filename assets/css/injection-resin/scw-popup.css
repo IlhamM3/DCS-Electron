@@ -1,0 +1,61 @@
+.bg-darkenblue {
+  background-color: #071d4a;
+}
+.wrapper-edit-scw-menu-pop {
+  display: flex;
+  flex-direction: column;
+  width: 742px;
+  height: 230px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 10px;
+}
+#selected-scw-pop {
+  color: #ea2027;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.heading-edit-scw-menu-pop {
+  /* height: 150px; */
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 20px 0;
+}
+.kanban-edit-scw-menu-pop {
+  width: 154px;
+  height: 92px;
+  background-color: #00ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000;
+}
+.btn-act-scw-utility-pop {
+  width: 195px;
+  height: 60px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 15px;
+  font-weight: 700;
+  border: none;
+}
+.btn-act-scw-utility-pop:focus {
+  outline: none;
+}
+.btn-act-scw-utility-pop.accept {
+  background-color: #ea2027;
+}
+.btn-act-scw-utility-pop.not {
+  background-color: #d3d5d8;
+}
+.btn-act-scw-utility-pop.disabled {
+  background-color: #949caa;
+  cursor: unset;
+}

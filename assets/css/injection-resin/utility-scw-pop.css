@@ -1,0 +1,63 @@
+ .wrapper-utilityScw {
+    width: 40%;
+    height: 350px;
+    margin: 16px 20px;
+  }
+  .wrapper-content-utilityScw {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
+  }
+  .empty-utilityScw {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+  }
+  .heading-utilityScw {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+.box-utilityScw.active {
+  background-color: #020305;
+  color: white;
+}
+  .box-utilityScw {
+    text-align: center;
+    margin: 20px 10px 0 10px;
+    font-size: 19px;
+    font-weight: 500;
+    width: 145px;
+    height: 75px;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    color: #000;
+    border: none;
+  }
+  .box-utilityScw:focus {
+    outline: none;
+  }
+  .btn-confirm-utilityScw{
+    margin-top: 60px;
+    width: 120px !important;
+    height: 60px !important;
+    font-size: 24px !important;
+    margin-left: 25px;
+}
+.btn-ng-cancel {
+    margin-top: 60px;
+    width: 280px !important;
+    height: 90px !important;
+    font-size: 24px !important;
+    margin-right: 25px;
+}
+  

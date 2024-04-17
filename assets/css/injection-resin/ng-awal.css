@@ -1,0 +1,32 @@
+.heading-NG {
+    font-weight: bold;
+    color: #fff;
+    font-size: 44px;
+}
+.ng-item-button {
+    padding: 1.5rem 0 !important;
+    margin: 1.25rem 0 !important;
+    font-weight: bold !important;
+}
+.btn-ng {
+    margin-top: 75px;
+    width: 280px !important;
+    height: 90px !important;
+    font-size: 24px !important;
+}
+@media (min-width: 1380px) and (max-width: 1920px) {
+    .heading-NG {
+        font-size: 4.5rem;
+    }
+    .ng-item-button {
+        padding: 2rem 0 !important;
+        margin: 1.75rem 0 !important;
+        font-size: 2rem !important;
+    }
+    .btn-ng {
+        width: 380px !important;
+        height: 150px !important;
+        font-size: 2rem !important;
+        font-weight: bold !important;
+    }
+}

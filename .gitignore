@@ -1,0 +1,9 @@
+node_modules/
+bin/
+build/
+
+package-lock.json
+*.conf.json
+*.conf.js
+*.config.json
+*.config.js
