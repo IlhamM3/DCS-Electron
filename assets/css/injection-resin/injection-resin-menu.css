@@ -21,27 +21,32 @@
 .headers-box-IRM.user {
     width: 100%;
     max-width: 340px;
+    margin-right:15px;
 }
 .headers-box-IRM.part {
     width: 100%;
     max-width: 157px;
-    margin-left: 15px;
+    margin-right: 15px;
     background-color: #fbc531;
+}
+.part.sensor{
+    max-width:70px;
+    background-color: #3bbfee;
 }
 .headers-box-IRM.time {
     width: 235px !important;
-    margin-left: 15px;
     background-color: #fbc531;
+    font-size: 19px;
 }
 .headers-box-IRM.content-part {
     width: 100%;
-    max-width: 470px;
-    margin-left: 20px;
+    max-width: 300px;
+    margin-right: 20px;
 }
 .headers-box-IRM.content {
     width: 100%;
     max-width: 232px;
-    margin-left: 15px;
+    margin-right: 15px;
 }
 .wrapper-btn-ng {
     display: flex;
@@ -70,7 +75,6 @@
     max-height: 335px;
     width: 75%;
 }
-
 .img-part-main-menu {
     width: 100% !important;
     height: 75% !important;
