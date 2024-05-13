@@ -459,6 +459,9 @@ ui.DOMContentLoaded(async function () {
   const updateDisplay = (details, summary, summaryPerKanban) => {
     $(".shift-qty-per-kanban").html(summary.kanban?.qty);
     $(".shift-pcs-ok").html(summary?.ok);
+
+    $(".shift-pcs-ok-new").html(summary?.ok);
+
     $(".shift-pcs-ng").html(summary?.ng);
     $(".shift-pcs-ng-scw").html(shift.production?.summary?.ng || 0);
 
