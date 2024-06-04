@@ -1298,6 +1298,44 @@ class __api extends eventEmitter {
             require("crypto").randomBytes(32).toString("Base64")
         );
     }
+
+    // New Feature Modul Sensor
+    async getCycleModul(machineId){
+        const self = this;
+        const options = {
+            url: `NewFeature/cycle/${machineId}`,
+            method: "get",
+            headers: {
+                Authorization: `Bearer ${self._token}`,
+            },
+            ...self.options,
+        };
+        return axios(options)
+            .then((response) => {
+                const data = response.data;
+                console.log(data)
+                return data;
+            })
+            .catch((error) => error);
+    }
+    async getBateraiModul(machineId){
+        const self = this;
+        const options = {
+            url: `NewFeature/battery/${machineId}`,
+            method: "get",
+            headers: {
+                Authorization: `Bearer ${self._token}`,
+            },
+            ...self.options,
+        };
+        return axios(options)
+            .then((response) => {
+                const data = response.data;
+                console.log(data)
+                return data;
+            })
+            .catch((error) => error);
+    }
 }
 
 module.exports = __api;
