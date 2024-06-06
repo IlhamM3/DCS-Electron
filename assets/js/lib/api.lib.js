@@ -62,7 +62,7 @@ class __api extends eventEmitter {
             status: false,
             timestamp: 0,
         };
-        this.websocket = new __ws(`${this.baseURL}/ws`, debug);
+        this.websocket = new __ws(`${this.baseURL}/myws`, debug);
     }
 
     /**
