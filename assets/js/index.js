@@ -413,6 +413,7 @@ ui.DOMContentLoaded(async function () {
   const NGs = await api.NGList();
   const dandoriList = await api.getDandoriLists();
   const responPosition = await api.getEmployeePosition();
+  
 
   let SCWList = null;
   for (
@@ -455,13 +456,18 @@ ui.DOMContentLoaded(async function () {
   localStorage.setItem("scwList", JSON.stringify(SCWList?.data));
   gEvents.emit("NGlists", NGs.data);
   gEvents.emit("employeePosition", responPosition.data);
-
+  
   const updateDisplay = (details, summary, summaryPerKanban) => {
+
+    
+
     $(".shift-qty-per-kanban").html(summary.kanban?.qty);
     $(".shift-pcs-ok").html(summary?.ok);
+
     $(".shift-pcs-ng").html(summary?.ng);
     $(".shift-pcs-ng-scw").html(shift.production?.summary?.ng || 0);
 
+    
     $(".shift-ct-plan").html((summary.kanban?.ct / 1000).toFixed(1));
     $(".shift-ct-actual").html((summary.ct / 1000).toFixed(1));
     // $(".shift-plan-kanban").html(summary.kanban?.planKanban);
@@ -1180,7 +1186,9 @@ ui.ready(function () {
       ui.showPopup(false);
     }
   });
-
+  api.websocket.on("event", async(data)=>{
+    console.log("event", data)
+  });
   api.websocket.on("ws-valid", async (data) => {
     console.log("ws-valid", data);
     api.websocket.send({

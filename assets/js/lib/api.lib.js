@@ -62,7 +62,7 @@ class __api extends eventEmitter {
             status: false,
             timestamp: 0,
         };
-        this.websocket = new __ws(`${this.baseURL}/ws`, debug);
+        this.websocket = new __ws(`${this.baseURL}/myws`, debug);
     }
 
     /**
@@ -1298,6 +1298,7 @@ class __api extends eventEmitter {
             require("crypto").randomBytes(32).toString("Base64")
         );
     }
+
 }
 
 module.exports = __api;
