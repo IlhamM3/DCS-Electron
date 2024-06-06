@@ -49,11 +49,21 @@ class __ws extends eventEmitter {
 
     self._ws.onmessage = function (received) {
       const { data } = received;
-
+      
       try {
         const message = JSON.parse(data);
-        const { status, code } = message;
-
+        const { status, code, event } = message;
+        if(message.event){
+          if (message.event === 'battery') {
+            const { data } = message;
+            const databaterai = data.data
+            gEvents.emit("databaterai", databaterai)
+          } else if(message.event === 'cycle'){
+            const {data} = message
+            const datacycle = data.data
+            gEvents.emit("datacycle", datacycle)
+          } 
+        }
         switch (code) {
           case 331:
             const sentData = { token: _token };
