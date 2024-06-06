@@ -456,17 +456,6 @@ ui.DOMContentLoaded(async function () {
   localStorage.setItem("scwList", JSON.stringify(SCWList?.data));
   gEvents.emit("NGlists", NGs.data);
   gEvents.emit("employeePosition", responPosition.data);
-
-  setInterval(async () => {
-    try {
-      const datacycle = await api.getCycleModul(config.machineId);
-      const databaterai = await api.getBateraiModul(config.machineId);
-      gEvents.emit("datacycle", datacycle);
-      gEvents.emit("databaterai", databaterai);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  }, 1000);
   
   const updateDisplay = (details, summary, summaryPerKanban) => {
 
@@ -1197,7 +1186,9 @@ ui.ready(function () {
       ui.showPopup(false);
     }
   });
-
+  api.websocket.on("event", async(data)=>{
+    console.log("event", data)
+  });
   api.websocket.on("ws-valid", async (data) => {
     console.log("ws-valid", data);
     api.websocket.send({

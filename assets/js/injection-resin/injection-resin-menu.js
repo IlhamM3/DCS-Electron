@@ -8,7 +8,6 @@ ui.ready(function () {
   const SensorLama = document.getElementById('sensorlama');
   const SensorBaru = document.getElementById('sensorbaru');
   const PCSsensor = document.getElementById('PCSsensor');
-
   const newFeatureData = () => {
     SensorLama.addEventListener('click', (event) => {
         event.preventDefault();
@@ -20,46 +19,46 @@ ui.ready(function () {
     });
 
     SensorBaru.addEventListener('click', (event) => {
-      total_pcs = this.total_produksi ?? 0;
       event.preventDefault();
       SensorBaru.style.backgroundColor = '#3bbfee';
       SensorLama.style.backgroundColor = '#fff';
-      PCSsensor.innerHTML = `<span class="shift-pcs-ok-new">${total_pcs}</span>&nbsp;Pcs `;
       PCSsensor.style.backgroundColor = '#3bbfee';
       PCSsensor.style.fontWeight = 'bold';
-  
-      const datacycleElements = document.getElementsByClassName('shift-pcs-ok-new');
+      PCSsensor.innerHTML = `<span class="shift-pcs-ok-new">0</span>&nbsp;Pcs `;
       
-      gEvents.on("datacycle", (data) => {
-          if (data === 'Proximity is off') {
-              for (let element of datacycleElements) {
-                  element.innerText = 0;
-              }
-              console.log(data);
-          } else {
-              if (data && data.length > 0) {
-                  const cycle = data[0].cycle;
-                  const total_produksi = cycle * this.qty_produksi; // Use qty_produksi directly
-                  this.total_produksi = total_produksi
-                  for (let element of datacycleElements) {
-                      element.innerText = total_produksi;
-                  }
-              } else {
-                  console.error("Invalid datacycle data:", data);
-              }
-          }
+      setInterval(() => {
+        this.total_produksi = this.datacycle * this.qty_product;
+        this.total_pcs = this.total_produksi || 0;
+        $(".shift-pcs-ok-new").html(this.total_pcs || 0);
+        // console.log(this.total_pcs)
+        // console.log(this.total_produksi)
+        // console.log(this.datacycle)
       });
-  });
-
     
-    gEvents.on("databaterai", (data) => {
-      if (data === 'Battery is off') {
-        IndikatorBaterai.innerHTML = '<span>Modul OFF</span>'
+    });
+
+    gEvents.on("datacycle", (data) =>{
+      this.datacycle = data[0].cycle
+    });
+    gEvents.on("databaterai", (Data) => {
+      const data = Data ?? 'Modul OFF'
+      if (data === 'Modul OFF') {
+          $("#indikator_baterai").html(data)
       } else {
-          const databaterai = data[0].battery_indicator;
-          IndikatorBaterai.innerText = `${databaterai}%`
+        const intervalId = setInterval(() => {
+            const timedata = data[0].updatedAt;
+            const lastReceivedDataTime = new Date(timedata).getTime();
+            const currentTime = new Date().getTime();
+            if (currentTime - lastReceivedDataTime > 10000) {
+              $("#indikator_baterai").html('Modul OFF')
+              clearInterval(intervalId);
+            } else {
+              const databaterai = data[0].battery_indicator;
+              $("#indikator_baterai").html(databaterai + '%');
+            }
+        }); // Menjalankan interval setiap 1 detik (1000 ms)
       }
-  });
+  });  
 };
 
 newFeatureData();
@@ -77,7 +76,7 @@ newFeatureData();
   const getSelectedQueueMain = () => {
     gEvents.on("selectedQueue", (data) => {
       const { selectedQueue } = data;
-      this.qty_produksi = selectedQueue.part.qty_per_kbn;
+      this.qty_product = selectedQueue.part.qty_per_kbn;
       console.log(selectedQueue)
       partNameMain.innerText = selectedQueue.part?.name;
       partNoMain.innerText = selectedQueue.part?.number;
