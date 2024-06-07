@@ -1,4 +1,5 @@
 const eventEmitter = require("events");
+global.config = require(__basedir + "/config/app.config");
 
 let _token = undefined;
 
@@ -57,11 +58,17 @@ class __ws extends eventEmitter {
           if (message.event === 'battery') {
             const { data } = message;
             const databaterai = data.data
-            gEvents.emit("databaterai", databaterai)
+            const machineid = databaterai[0].machineId
+            if(machineid === config.machineId){
+              gEvents.emit("databaterai", databaterai)
+            }
           } else if(message.event === 'cycle'){
             const {data} = message
             const datacycle = data.data
-            gEvents.emit("datacycle", datacycle)
+            const machineid = datacycle[0].machineId
+            if(machineid === config.machineId){
+              gEvents.emit("datacycle", datacycle)
+            }
           } 
         }
         switch (code) {
