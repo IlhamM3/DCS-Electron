@@ -58,6 +58,7 @@ class __ws extends eventEmitter {
           if (message.event === 'battery') {
             const { data } = message;
             const databaterai = data.data
+            console.log(databaterai)
             const machineid = databaterai[0].machineId
             if(machineid === config.machineId){
               gEvents.emit("databaterai", databaterai)
@@ -65,6 +66,7 @@ class __ws extends eventEmitter {
           } else if(message.event === 'cycle'){
             const {data} = message
             const datacycle = data.data
+            console.log(datacycle)
             const machineid = datacycle[0].machineId
             if(machineid === config.machineId){
               gEvents.emit("datacycle", datacycle)

@@ -39,6 +39,7 @@ ui.ready(function () {
 
     gEvents.on("datacycle", (data) =>{
       this.datacycle = data[0].cycle
+      console.log(this.datacycle)
     });
     gEvents.on("databaterai", (Data) => {
       const data = Data ?? 'Modul OFF'
@@ -49,7 +50,7 @@ ui.ready(function () {
             const timedata = data[0].updatedAt;
             const lastReceivedDataTime = new Date(timedata).getTime();
             const currentTime = new Date().getTime();
-            if (currentTime - lastReceivedDataTime > 10000) {
+            if (currentTime - lastReceivedDataTime > 65000) {
               $("#indikator_baterai").html('Modul OFF')
               clearInterval(intervalId);
             } else {
