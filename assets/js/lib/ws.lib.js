@@ -1,8 +1,7 @@
 const eventEmitter = require("events");
-global.config = require(__basedir + "/config/app.config");
-
+const { config } = require("process");
+const configure = require(__basedir +"/config/app.config.js");
 let _token = undefined;
-
 class __ws extends eventEmitter {
   constructor(url, debug) {
     super();
@@ -60,15 +59,19 @@ class __ws extends eventEmitter {
             const databaterai = data.data
             console.log(databaterai)
             const machineid = databaterai[0].machineId
-            if(machineid === config.machineId){
+            if(machineid == configure.machineId){
+              console.log("dalam if:",databaterai)
               gEvents.emit("databaterai", databaterai)
             }
           } else if(message.event === 'cycle'){
             const {data} = message
             const datacycle = data.data
-            console.log(datacycle)
             const machineid = datacycle[0].machineId
-            if(machineid === config.machineId){
+            console.log(configure.machineId)
+            console.log("luar if",datacycle)
+            console.log(machineid);
+            if(machineid == configure.machineId){
+              console.log("dalam if:", datacycle)
               gEvents.emit("datacycle", datacycle)
             }
           } 
